@@ -7,9 +7,10 @@
       <h2 style="font-size: 70px">Doppelkinn-Domme Ausreden-Generator</h2>
       <br />
       <br />
-      <a href="whatsapp://send" data-text="{{dommeSays}}" data-href=""
-         class="wa_btn wa_btn_s">
-         Teile Domme's Ausrede via Whatsapp
+      <a href="whatsapp://send?text={{dommeSays}}" data-action="share/whatsapp/share"
+         data-href="">
+        <!-- <img src="img/WhatsApp.png" alt="Whatsapp Logo"/> -->
+        Teile Domme's Ausrede via Whatsapp!
       </a>
 
       <div class="alert alert-success"
@@ -19,7 +20,7 @@
         <span class="glyphicon glyphicon-user"
               style="font-size: 25px;">Doppelkinn-Domme:</span>
         <br />
-        <span id="text-to-share" style="font-size: 32px;">{{dommeSays}}</span>
+        <span style="font-size: 32px;">{{dommeSays}}</span>
         <br />
         <div style="font-size: 23px;
                     position: absolute;
