@@ -4,11 +4,6 @@
 
   <body onLoad={dommeSprich()}>
     <script type="text/javascript">
-      function whatsapp() {
-        let text = document.getElementById("domme-says").innerHTML;
-        return text;
-      }
-
       function dommeSprich() {
         var einleitung = [
           'Sorry Jungs',
@@ -67,6 +62,7 @@
 
         var schwachsinn = `${eins}, ${zwei}, dass ${drei}. ${vier}!`
 
+        document.getElementById("whatsapp").href=`whatsapp://send?text=${schwachsinn}`;
         document.getElementById("domme-says").innerHTML = schwachsinn;
       }
     </script>
@@ -75,7 +71,7 @@
       <br />
       <br />
 
-      <a href="whatsapp://send" data-text="ausrede" data-action="share/whatsapp/share">
+      <a id="whatsapp" href="whatsapp://send?text=" data-action="share/whatsapp/share">
         <img src='http://www.clker.com/cliparts/5/3/6/e/1480520219570138315whatsapp_icon.thumb.png' alt='Whatsapp Icon image'/>
         Teile Domme's Ausrede via Whatsapp!
       </a>
