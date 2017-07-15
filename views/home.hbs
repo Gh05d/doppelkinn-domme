@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+
+  <body>
+    <div class="container clear-top panel-default">
+      <h2>Doppelkinn-Domme Ausreden-Generator</h2>
+      <a href="#" onClick={location.reload()} class="btn btn-primary btn-primary">Sprich Domme</a>
+      <div class="alert alert-success"
+           style="position: relative;
+                  width: 450px;
+                  margin-top: 20px;">
+        <span class="glyphicon glyphicon-user">Doppelkinn-Domme:</span>
+        <br />
+        <span>{{dommeSays}}</span>
+        <br />
+        <div style="font-size: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;">
+          {{getTime}}
+        </div>
+      </div>
+      {{> footer}}
+    </div>
+  </body>
+</html>

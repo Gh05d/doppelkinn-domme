@@ -1,0 +1,99 @@
+const express = require('express');
+const hbs = require('hbs');
+const fs = require('fs');
+// Needed to deploy the app to heroku. Uses localhost 3000 in machine.
+const port = process.env.PORT || 3000;
+var app = express();
+
+hbs.registerPartials(__dirname + '/views/partials');
+app.set('view engine', 'hbs');
+
+app.use((req, res, next) => {
+  var now = new Date().toString();
+  var log = `${now}: ${req.method} ${req.url}`;
+  // Create the log file.
+  console.log(log);
+  fs.appendFile('server.log', log + '\n', err => {
+    if(err) {
+      console.log('Unable to append to server.log');
+    }
+  });
+  next();
+});
+
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs');
+// });
+
+app.use(express.static(__dirname + '/public'));
+
+hbs.registerHelper('getCurrentYear', () => {
+  return new Date().getFullYear();
+});
+
+hbs.registerHelper('getTime', () => {
+  return `${new Date().getHours()}:${new Date().getMinutes()}`;
+});
+
+hbs.registerHelper('dommeSays', () => {
+  var einleitung = [
+    'Sorry Jungs',
+    'Tut mir leid Mädels',
+    'Oops',
+    'Oh...'
+  ];
+
+  var entschuldigung = [
+    'Ich hab völlig verpennt',
+    'Ich hab verschwitzt',
+    'Mir ist entfallen',
+    'Ich hab nicht bedacht',
+    'Ich hab vergessen',
+    'Mir war nicht klar'
+  ];
+
+  var ausrede = [
+    'Desi\'s Hamster gestorben ist',
+    "Desi\'s Kaninchen gestorben ist",
+    'Desi\'s Meerschweinchen gestorben ist',
+    'Ich morgen Fotoshooting mit der Family hab',
+    'eines meiner 5.000 Nichten morgen getauft wird',
+    'meine Oma zum fünften mal in diesem Jahr gestorben ist',
+    'Morgen Heilige drei Könige ist und wir das immer feiern',
+    'mein Auto keinen Sprit mehr hat',
+    'mein Auto nicht angesprungen ist',
+    'mein Vater mir mein Auto nicht gegeben hat',
+    'morgen der Jahrestag von Desi\'s totem Hamster ist',
+    'morgen der Jahrestag von Desi\'s totem Kaninchen ist',
+    'morgen der Jahrestag von Desi\'s totem Meerschweinchen ist',
+    'Ich meine Tage habe'
+  ];
+
+  var vertroestung = [
+    'Aber das nächste mal bin ich auf jeden Fall am Start',
+    'Aber wir sehen uns ja nächste Woche',
+    'Aber das passiert sicher nicht nochmal',
+    'Sorry, das konnte ich aber echt vorher nicht wissen',
+    'Sorry, aber dafür kann ich wirklich nichts'
+  ];
+
+  let eins = einleitung[Math.floor(Math.random() * einleitung.length)];
+  let zwei = entschuldigung[Math.floor(Math.random() * entschuldigung.length)];
+  let drei = ausrede[Math.floor(Math.random() * ausrede.length)];
+  let vier = vertroestung[Math.floor(Math.random() * vertroestung.length)];
+
+  var schwachsinn = `${eins}, ${zwei}, dass ${drei}.
+                    ${vier}!`
+
+  return schwachsinn;
+})
+
+app.get('/', (req, res) => {
+  res.render('home.hbs', {
+    pageTitle: 'Doppelkinn-Domme'
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}...`);
+});
