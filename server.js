@@ -32,7 +32,11 @@ hbs.registerHelper('getCurrentYear', () => {
 });
 
 hbs.registerHelper('getTime', () => {
-  return `${new Date().getHours()}:${new Date().getMinutes()}`;
+  let hours = new Date().getHours();
+  let gmin = new Date().getMinutes();
+  let minutes = (gmin < 10 ? '0' : '') + gmin;
+
+  return `${hours}:${minutes}`;
 });
 
 hbs.registerHelper('dommeSays', () => {
