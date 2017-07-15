@@ -57,7 +57,7 @@ hbs.registerHelper('dommeSays', () => {
     "Desi\'s Kaninchen gestorben ist",
     'Desi\'s Meerschweinchen gestorben ist',
     'Ich morgen Fotoshooting mit der Family hab',
-    'eines meiner 5.000 Nichten morgen getauft wird',
+    'eine meiner 5.000 Nichten morgen getauft wird',
     'meine Oma zum fünften mal in diesem Jahr gestorben ist',
     'Morgen Heilige drei Könige ist und wir das immer feiern',
     'mein Auto keinen Sprit mehr hat',
