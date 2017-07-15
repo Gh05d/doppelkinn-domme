@@ -45,7 +45,9 @@ hbs.registerHelper('dommeSays', () => {
     'Tut mir leid Mädels',
     'Oops',
     'Oh...',
-    'Ach je'
+    'Ach je',
+    'Sorry, hab die Nachricht jetzt erst gelesen',
+    'Sorry Jungs, kann heute nicht'
   ];
 
   var entschuldigung = [
@@ -72,6 +74,9 @@ hbs.registerHelper('dommeSays', () => {
     'morgen der Jahrestag von Desi\'s totem Kaninchen ist',
     'morgen der Jahrestag von Desi\'s totem Meerschweinchen ist',
     'Ich meine Tage habe',
+    'dass ich mir beim Anstehen vor der Disco die Bänder gerissen hab',
+    'Ich dein Handy meinem Neffen geschenkt habe',
+    'heut gar keine Postkutsche mehr fährt. Das ist jetzt blöd',
     'Ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist'
   ];
 
@@ -80,7 +85,9 @@ hbs.registerHelper('dommeSays', () => {
     'Aber wir sehen uns ja nächste Woche',
     'Aber das passiert sicher nicht nochmal',
     'Sorry, das konnte ich aber echt vorher nicht wissen',
-    'Sorry, aber dafür kann ich wirklich nichts'
+    'Sorry, aber dafür kann ich wirklich nichts',
+    'Nächstes mal bin ich auf jeden Fall dabei',
+    'Jetzt ist es leider zu spät'
   ];
 
   let eins = einleitung[Math.floor(Math.random() * einleitung.length)];
