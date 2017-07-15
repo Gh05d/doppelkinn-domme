@@ -3,25 +3,31 @@
   {{> head}}
 
   <body>
-    <div class="container clear-top jumbotron">
-      <h2>Doppelkinn-Domme Ausreden-Generator</h2>
+    <div class="container clear-top panel-default">
+      <h2 style="font-size: 70px">Doppelkinn-Domme Ausreden-Generator</h2>
+      <br />
       <br />
       <div class="alert alert-success"
            style="position: relative;
-                  width: 450px;">
-        <span class="glyphicon glyphicon-user">Doppelkinn-Domme:</span>
+                  width: 635px;
+                  padding-bottom: 30px;">
+        <span class="glyphicon glyphicon-user"
+              style="font-size: 25px;">Doppelkinn-Domme:</span>
         <br />
-        <span>{{dommeSays}}</span>
+        <span style="font-size: 32px;">{{dommeSays}}</span>
         <br />
-        <div style="font-size: 10px;
+        <div style="font-size: 23px;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -2;
                     right: 0;">
           {{getTime}}
         </div>
       </div>
       <br />
-      <a href="#" onClick={location.reload()} class="btn btn-primary btn-primary">Sprich Domme</a>
+      <br />
+      <a href="#" onClick={location.reload()}
+         class="btn btn-primary btn-primary"
+         style="font-size: 32px;">Sprich Domme</a>
       {{> footer}}
     </div>
   </body>

@@ -44,7 +44,8 @@ hbs.registerHelper('dommeSays', () => {
     'Sorry Jungs',
     'Tut mir leid Mädels',
     'Oops',
-    'Oh...'
+    'Oh...',
+    'Ach je'
   ];
 
   var entschuldigung = [
@@ -52,7 +53,7 @@ hbs.registerHelper('dommeSays', () => {
     'Ich hab verschwitzt',
     'Mir ist entfallen',
     'Ich hab nicht bedacht',
-    'Ich hab vergessen',
+    'Ich hab völlig vergessen',
     'Mir war nicht klar'
   ];
 
@@ -70,7 +71,8 @@ hbs.registerHelper('dommeSays', () => {
     'morgen der Jahrestag von Desi\'s totem Hamster ist',
     'morgen der Jahrestag von Desi\'s totem Kaninchen ist',
     'morgen der Jahrestag von Desi\'s totem Meerschweinchen ist',
-    'Ich meine Tage habe'
+    'Ich meine Tage habe',
+    'Ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist'
   ];
 
   var vertroestung = [
