@@ -21,7 +21,9 @@
           'Mir ist entfallen',
           'Ich hab nicht bedacht',
           'Ich hab völlig vergessen',
-          'Mir war nicht klar'
+          'Mir war nicht klar',
+          'Mir ist dazwischen gekommen',
+          'Ich hab verpeilt'
         ];
 
         var ausrede = [
@@ -41,6 +43,13 @@
           'Ich meine Tage habe',
           'dass ich mir beim Anstehen vor der Disco die Bänder gerissen hab',
           'Ich dein Handy meinem Neffen geschenkt habe',
+          'mein neugekauftes und von meinem Schwager generalüberholtes Auto zum dritten Mal in dieser Woche in der Werkstatt ist',
+          'mein Auspuff schon wieder abgefallen ist. Dabei steht Peugeot doch für echte französische Wertarbeit',
+          'Ich übrigens doch nicht zu meinem eigenen Geburtstag kommen kann. Kann mir das feiern doch nicht leisten. Die Geschenke könnt ihr mir ja bei Gelegenheit geben',
+          'dass ich doch nicht zum Fußball kommen kann. Mir ist aufgefallen dass ich mich dafür bewegen müsste. Das ist mir nach einem anstrengenden Tag World of Warcraft zu viel',
+          'dass Fußball doch heute nichts wird. Hab grade gemerkt dass Ich zu fett dafür bin',
+          'dass ich 9 Millionen für Gbamin geboten habe. Ich wollte nur 990.000 bieten! Aber ihr könnt mir ja sicher mein Geld zurück geben. Ansonsten kann ich leider nicht kommen, weil ich jetzt pleite bin',
+          'dass Ich heute doch nicht The Walking Dead gucken kommen kann. Desi will lieber was lebensbejahendes schauen. Aber sie sagt dass sie die Serie sehr interessant findet',
           'heut gar keine Postkutsche mehr fährt. Das ist jetzt blöd',
           'Ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist'
         ];
@@ -62,7 +71,7 @@
 
         var schwachsinn = `${eins}, ${zwei}, dass ${drei}. ${vier}!`
 
-        document.getElementById("whatsapp").href=`whatsapp://send?text=${schwachsinn}`;
+        document.getElementById("whatsapp").href=`whatsapp://send?text=Domme:\n${schwachsinn}`;
         document.getElementById("domme-says").innerHTML = schwachsinn;
       }
     </script>
