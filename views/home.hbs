@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html>
-  {{> head}}
+{{> head}}
 
-  <body onLoad={dommeSprich()}>
-    <script type="text/javascript">
-      function dommeSprich() {
-        var einleitung = [
-          'Sorry Jungs',
-          'Tut mir leid Mädels',
-          'Oops',
-          'Oh...',
-          'Ach je',
-          'Sorry, hab die Nachricht jetzt erst gelesen',
-          'Sorry Jungs, kann heute nicht'
-        ];
+<body onLoad={init()}>
+  <script type="text/javascript">
+    function dommeSprich() {
+      var einleitung = [
+        'Sorry Jungs',
+        'Tut mir leid Mädels',
+        'Oops',
+        'Oh...',
+        'Ach je',
+        'Sorry, hab die Nachricht jetzt erst gelesen',
+        'Sorry Jungs, kann heute nicht'
+      ];
 
-        var entschuldigung = [
-          'Ich hab völlig verpennt',
-          'Ich hab verschwitzt',
-          'Mir ist entfallen',
-          'Ich hab nicht bedacht',
-          'Ich hab völlig vergessen',
-          'Mir war nicht klar',
-          'Mir ist dazwischen gekommen',
-          'Ich hab verpeilt'
-        ];
+      var entschuldigung = [
+        'ich hab völlig verpennt',
+        'ich hab verschwitzt',
+        'mir ist entfallen',
+        'ich hab nicht bedacht',
+        'ich hab völlig vergessen',
+        'mir war nicht klar',
+        'mir ist dazwischen gekommen',
+        'ich hab verpeilt'
+      ];
 
-        var ausrede = [
-          'Desi\'s Hamster gestorben ist',
-          "Desi\'s Kaninchen gestorben ist",
-          'Desi\'s Meerschweinchen gestorben ist',
-          'Ich morgen Fotoshooting mit der Family hab',
-          'eine meiner 5.000 Nichten morgen getauft wird',
-          'meine Oma zum fünften mal in diesem Jahr gestorben ist',
-          'Morgen Heilige drei Könige ist und wir das immer feiern',
-          'mein Auto keinen Sprit mehr hat',
-          'mein Auto nicht angesprungen ist',
-          'mein Vater mir mein Auto nicht gegeben hat',
-          'morgen der Jahrestag von Desi\'s totem Hamster ist',
-          'morgen der Jahrestag von Desi\'s totem Kaninchen ist',
-          'morgen der Jahrestag von Desi\'s totem Meerschweinchen ist',
-          'Ich meine Tage habe',
-          'dass ich mir beim Anstehen vor der Disco die Bänder gerissen hab',
-          'Ich dein Handy meinem Neffen geschenkt habe',
-          'mein neugekauftes und von meinem Schwager generalüberholtes Auto zum dritten Mal in dieser Woche in der Werkstatt ist',
-          'mein Auspuff schon wieder abgefallen ist. Dabei steht Peugeot doch für echte französische Wertarbeit',
-          'Ich übrigens doch nicht zu meinem eigenen Geburtstag kommen kann. Kann mir das feiern doch nicht leisten. Die Geschenke könnt ihr mir ja bei Gelegenheit geben',
-          'dass ich doch nicht zum Fußball kommen kann. Mir ist aufgefallen dass ich mich dafür bewegen müsste. Das ist mir nach einem anstrengenden Tag World of Warcraft zu viel',
-          'dass Fußball doch heute nichts wird. Hab grade gemerkt dass Ich zu fett dafür bin',
-          'dass ich 9 Millionen für Gbamin geboten habe. Ich wollte nur 990.000 bieten! Aber ihr könnt mir ja sicher mein Geld zurück geben. Ansonsten kann ich leider nicht kommen, weil ich jetzt pleite bin',
-          'dass Ich heute doch nicht The Walking Dead gucken kommen kann. Desi will lieber was lebensbejahendes schauen. Aber sie sagt dass sie die Serie sehr interessant findet',
-          'heut gar keine Postkutsche mehr fährt. Das ist jetzt blöd',
-          'Ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist'
-        ];
+      var ausrede = [
+        'Desi\'s Hamster gestorben ist',
+        "Desi\'s Kaninchen gestorben ist",
+        'Desi\'s Meerschweinchen gestorben ist',
+        'ich morgen Fotoshooting mit der Family hab',
+        'eine meiner 5.000 Nichten morgen getauft wird',
+        'meine Oma zum fünften mal in diesem Jahr gestorben ist',
+        'Morgen Heilige drei Könige ist und wir das immer feiern',
+        'mein Auto keinen Sprit mehr hat',
+        'mein Auto nicht angesprungen ist',
+        'mein Vater mir mein Auto nicht gegeben hat',
+        'morgen der Jahrestag von Desi\'s totem Hamster ist',
+        'morgen der Jahrestag von Desi\'s totem Kaninchen ist',
+        'morgen der Jahrestag von Desi\'s totem Meerschweinchen ist',
+        'ich meine Tage habe',
+        "ich mit den Jungs in Schottland Röcke anprobieren bin",
+        "Desi\'s Hamster einen Zahn gezogen bekommen hat",
+        'ich mir beim Anstehen vor der Disco die Bänder gerissen hab',
+        'ich dein Handy meinem Neffen geschenkt habe',
+        'mein neugekauftes und von meinem Schwager generalüberholtes Auto zum dritten Mal in dieser Woche in der Werkstatt ist',
+        'mein Auspuff schon wieder abgefallen ist. Dabei steht Peugeot doch für echte französische Wertarbeit',
+        'ich übrigens doch nicht zu meinem eigenen Geburtstag kommen kann. Kann mir das feiern doch nicht leisten. Die Geschenke könnt ihr mir ja bei Gelegenheit geben',
+        'ich doch nicht zum Fußball kommen kann. Mir ist aufgefallen dass ich mich dafür bewegen müsste. Das ist mir nach einem anstrengenden Tag World of Warcraft zu viel',
+        'Fußball doch heute nichts wird. Hab grade gemerkt dass Ich zu fett dafür bin',
+        'ich 9 Millionen für Gbamin geboten habe. Ich wollte nur 990.000 bieten! Aber ihr könnt mir ja sicher mein Geld zurück geben. Ansonsten kann ich leider nicht kommen, weil ich jetzt pleite bin',
+        'ich heute doch nicht The Walking Dead gucken kommen kann. Desi will lieber was lebensbejahendes schauen. Aber sie sagt dass sie die Serie sehr interessant findet',
+        'heut gar keine Postkutsche mehr fährt. Das ist jetzt blöd',
+        'ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist'
+      ];
 
-        var vertroestung = [
-          'Aber das nächste mal bin ich auf jeden Fall am Start',
-          'Aber wir sehen uns ja nächste Woche',
-          'Aber das passiert sicher nicht nochmal',
-          'Sorry, das konnte ich aber echt vorher nicht wissen',
-          'Sorry, aber dafür kann ich wirklich nichts',
-          'Nächstes mal bin ich auf jeden Fall dabei',
-          'Jetzt ist es leider zu spät'
-        ];
+      var vertroestung = [
+        'Aber das nächste mal bin ich auf jeden Fall am Start',
+        'Aber wir sehen uns ja nächste Woche',
+        'Aber das passiert sicher nicht nochmal',
+        'Sorry, das konnte ich aber echt vorher nicht wissen',
+        'Sorry, aber dafür kann ich wirklich nichts',
+        'Nächstes mal bin ich auf jeden Fall dabei',
+        'Jetzt ist es leider zu spät'
+      ];
 
-        let eins = einleitung[Math.floor(Math.random() * einleitung.length)];
-        let zwei = entschuldigung[Math.floor(Math.random() * entschuldigung.length)];
-        let drei = ausrede[Math.floor(Math.random() * ausrede.length)];
-        let vier = vertroestung[Math.floor(Math.random() * vertroestung.length)];
+      let eins = einleitung[Math.floor(Math.random() * einleitung.length)];
+      let zwei = entschuldigung[Math.floor(Math.random() * entschuldigung.length)];
+      let drei = ausrede[Math.floor(Math.random() * ausrede.length)];
+      let vier = vertroestung[Math.floor(Math.random() * vertroestung.length)];
 
-        var schwachsinn = `${eins}, ${zwei}, dass ${drei}. ${vier}!`
+      var schwachsinn = `${eins}, ${zwei}, dass ${drei}. ${vier}!`
 
-        document.getElementById("whatsapp").href=`whatsapp://send?text=${schwachsinn}`;
-        document.getElementById("domme-says").innerHTML = schwachsinn;
+      document.getElementById("whatsapp").href = `whatsapp://send?text=${schwachsinn}`;
+      document.getElementById("domme-says").innerHTML = schwachsinn;
+    }
+
+    function formStatus() {
+      const submitButton = document.querySelector("#submit")
+      const email = document.querySelector("input")
+      const textArea = document.querySelector("textarea")
+      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/igm;
+
+      if (email && email.value && email.value.match(emailRegex) && textArea && textArea.value) {
+        submitButton.disabled = false
+      } else {
+        submitButton.disabled = true
       }
-    </script>
-    <div class="container clear-top panel panel-default">
-      <h2 style="font-size: 70px">Doppelkinn-Domme Ausreden-Generator</h2>
-      <br />
-      <br />
+    }
 
-      <a id="whatsapp" href="whatsapp://send?text=" data-action="share/whatsapp/share">
-        <img src='http://www.clker.com/cliparts/5/3/6/e/1480520219570138315whatsapp_icon.thumb.png' alt='Whatsapp Icon image'/>
-        Teile Domme's Ausrede via Whatsapp!
-      </a>
+    function submitForm() {
+      const ausrede = document.querySelector("textarea")
+      const name = document.querySelector("input")
 
-      <div class="alert alert-success"
-           style="position: relative;
-                  width: 635px;
-                  padding-bottom: 30px;">
-        <span class="glyphicon glyphicon-user"
-              style="font-size: 25px;">Doppelkinn-Domme:</span>
-        <br />
-        <span id="domme-says" style="font-size: 32px;"></span>
-        <br />
-        <div style="font-size: 23px;
-                    position: absolute;
-                    bottom: -2;
-                    right: 0;">
-          {{getTime}}
+      if (ausrede.value) {
+        const url = `/neue-ausrede?${name.value}&${ausrede.value}`
+        document.location.href = url
+      }
+    }
+
+    function init() {
+      dommeSprich()
+      formStatus()
+
+      document.querySelector("input").addEventListener(
+        'keyup',
+        formStatus,
+        false
+      );
+
+      document.querySelector("textarea").addEventListener(
+        'keyup',
+        formStatus,
+        false
+      );
+    }
+
+  </script>
+
+  <section class="container">
+    <h1>Doppelkinn-Domme Ausreden-Generator</h1>
+    <main>
+      <div>
+        <div class="ausrede">
+          <span class="name"><i class="fa fa-poo"></i> Doppelkinn-Domme:</span>
+          <span id="domme-says"></span>
+          <span class="time">{{getTime}}</span>
+        </div>
+
+        <div class="share">
+          <i class="fab fa-whatsapp"></i> <a id="whatsapp" href="whatsapp://send?text="
+            data-action="share/whatsapp/share">
+            Teile Domme's Ausrede via Whatsapp!
+          </a>
         </div>
       </div>
-      <br />
-      <br />
-      <a href="#" onClick={dommeSprich()}
-         class="btn btn-primary btn-primary"
-         style="font-size: 32px;">Sprich Domme</a>
-      {{> footer}}
-    </div>
-  </body>
+
+      <button onClick={dommeSprich()} class="talk-button">Sprich Domme</button>
+
+      <form>
+        <input name="username" required type="email" placeholder="Your Email">
+        <textarea required placeholder="Sorry Jungs,..." rows="5" cols="40"></textarea>
+        <button type="reset">Cancel</button>
+        <button disabled type="button" onClick={submitForm()} id="submit">Submit</button>
+      </form>
+    </main>
+
+    {{> footer}}
+  </section>
+</body>
+
 </html>
