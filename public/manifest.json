@@ -3,12 +3,12 @@
   "name": "DoppelkinnDomme Ausredengenerator",
   "icons": [
     {
-      "src": "/domme-192x192.png",
+      "src": "/img/domme-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/domme-512x512.png",
+      "src": "/img/domme-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
