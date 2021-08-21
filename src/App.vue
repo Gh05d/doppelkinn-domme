@@ -19,6 +19,7 @@ export default { name: "App", components: { Domme } };
 body,
 html {
   margin: 0;
+  box-sizing: border-box;
 }
 
 #app {
@@ -32,14 +33,17 @@ html {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - var(--padding-vertical));
+  height: calc(100vh - var(--padding-vertical) * 2);
   padding: var(--padding-vertical) 10px;
   background-color: #fafafa;
 }
 
+footer {
+  align-self: start;
+}
+
 footer p {
   margin: 0;
-  align-self: start;
   font-size: 0.8rem;
 }
 

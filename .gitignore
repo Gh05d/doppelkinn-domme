@@ -22,5 +22,4 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-heroku.key.pub
 sendgrid.env
