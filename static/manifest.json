@@ -3,19 +3,19 @@
   "name": "DoppelkinnDomme Ausredengenerator",
   "icons": [
     {
-      "src": "/192.png",
+      "src": "/domme-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/512.png",
+      "src": "/domme-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "/?utm_source=a2hs",
-  "background_color": "#FFFFFF",
+  "background_color": "#ffc0cb",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#FFFFFF"
+  "theme_color": "#ffc0cb"
 }

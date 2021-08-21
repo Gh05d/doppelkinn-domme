@@ -14,7 +14,7 @@
     title="Teile die Ausrede per WhatsApp"
     class="whatsapp-link"
   >
-    <img src="../assets/WhatsApp.png" />
+    <img alt="WhatsApp Logo" src="../assets/WhatsApp.png" />
   </a>
 
   <button @click="newExcuse">Neue Ausrede erstellen</button>
@@ -23,7 +23,7 @@
 <style scoped>
 button {
   border: 0;
-  background: pink;
+  background: #ffc0cb;
   padding: 10px;
   box-shadow: 6px 5px 3px 0px rgba(0, 0, 0, 0.62);
 }
@@ -38,7 +38,7 @@ figcaption {
 }
 
 .bullshit {
-  color: rgb(177, 62, 81);
+  color: rgb(68, 67, 68);
 }
 </style>
 
