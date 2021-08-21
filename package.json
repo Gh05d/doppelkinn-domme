@@ -57,6 +57,7 @@
   "bugs": {
     "url": "https://github.com/Gh05d/doppelkinn-domme/issues"
   },
+  "engines":{"node":"12.x"},
   "homepage": "https://github.com/Gh05d/doppelkinn-domme#readme",
   "keywords": [
     "vue",
