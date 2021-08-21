@@ -1,28 +1,67 @@
 {
   "name": "doppelkinn-domme",
   "version": "1.1.0",
+  "private": true,
   "description": "Doppelkinn-Domme will give u valid reasons why he can't be here.",
-  "main": "index.js",
+  "author": {
+    "name": "Gh05d"
+  },
   "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gh05d/doppelkinn-domme.git"
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
   },
-  "keywords": [
-    "doppelkinn-domme",
-    "excuses"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.3.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
   ],
-  "author": "Gh05d",
-  "license": "ISC",
+  "_id": "doppelkinn-domme@1.1.0",
   "bugs": {
     "url": "https://github.com/Gh05d/doppelkinn-domme/issues"
   },
   "homepage": "https://github.com/Gh05d/doppelkinn-domme#readme",
-  "dependencies": {
-    "@sendgrid/mail": "^6.4.0",
-    "express": "^4.15.3",
-    "hbs": "^4.0.1"
+  "keywords": [
+    "vue",
+    "javascript",
+    "doppelkinn-domme",
+    "excuses"
+  ],
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gh05d/doppelkinn-domme.git"
   }
 }
