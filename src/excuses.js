@@ -1,5 +1,3 @@
-import desisAnimals from "./animals";
-
 export default {
   einleitung: [
     "Sorry Jungs",
@@ -23,7 +21,7 @@ export default {
     "ich hab verpeilt",
   ],
   ausrede: [
-    ...desisAnimals.map(animal => `Desi's ${animal} gestorben ist`),
+    "death",
     "ich morgen Fotoshooting mit der Family hab",
     "eine meiner 5.000 Nichten morgen getauft wird",
     "meine Oma zum fünften mal in diesem Jahr gestorben ist",

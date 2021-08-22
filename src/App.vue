@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <Domme />
+  <UpdateButton />
   <footer>
     <p>
       Created by <a href="https://github.com/Gh05d">Gh05d</a> - Copyright
@@ -29,8 +30,9 @@
 
 <script>
 import Domme from "./components/Domme.vue";
+import UpdateButton from "./components/UpdateButton.vue";
 
-export default { name: "App", components: { Domme } };
+export default { name: "App", components: { Domme, UpdateButton } };
 </script>
 
 <style>

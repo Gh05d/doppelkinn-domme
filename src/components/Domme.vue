@@ -62,6 +62,7 @@ figcaption {
 <script>
 import { ref, computed, onMounted } from "vue";
 import excuses from "../excuses";
+import animals from "../animals";
 import SpeechButton from "./SpeechButton.vue";
 
 export default {
@@ -77,16 +78,24 @@ export default {
           `${bullshit.value} _created with the Doppelkinn Domme Ausredengenerator_`
         )}`
     );
+
     let userLanguage = computed(
       () => navigator?.language || navigator?.userLanguage
     );
 
+    const getRandomNumber = length => Math.floor(Math.random() * length);
+
     function newExcuse() {
-      let eins = einleitung[Math.floor(Math.random() * einleitung.length)];
-      let zwei =
-        entschuldigung[Math.floor(Math.random() * entschuldigung.length)];
-      let drei = ausrede[Math.floor(Math.random() * ausrede.length)];
-      let vier = vertroestung[Math.floor(Math.random() * vertroestung.length)];
+      let eins = einleitung[getRandomNumber(einleitung.length)];
+      let zwei = entschuldigung[getRandomNumber(entschuldigung.length)];
+      let drei = ausrede[getRandomNumber(ausrede.length)];
+
+      if (drei == "death") {
+        drei = `Desi's ${
+          animals[getRandomNumber(animals.length)]
+        } gestorben ist`;
+      }
+      let vier = vertroestung[getRandomNumber(vertroestung.length)];
 
       bullshit.value = `${eins}, ${zwei}, dass ${drei}. ${vier}!`;
     }
