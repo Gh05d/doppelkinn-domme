@@ -1,6 +1,6 @@
 {
   "name": "doppelkinn-domme",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Doppelkinn-Domme will give u valid reasons why he can't be here.",
   "author": {
@@ -53,11 +53,12 @@
     "last 2 versions",
     "not dead"
   ],
-  "_id": "doppelkinn-domme@1.1.0",
   "bugs": {
     "url": "https://github.com/Gh05d/doppelkinn-domme/issues"
   },
-  "engines":{"node":"12.x"},
+  "engines": {
+    "node": "12.x"
+  },
   "homepage": "https://github.com/Gh05d/doppelkinn-domme#readme",
   "keywords": [
     "vue",
