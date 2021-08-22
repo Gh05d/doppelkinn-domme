@@ -1,3 +1,5 @@
+import desisAnimals from "./animals";
+
 export default {
   einleitung: [
     "Sorry Jungs",
@@ -7,6 +9,8 @@ export default {
     "Ach je",
     "Sorry, hab die Nachricht jetzt erst gelesen",
     "Sorry Jungs, kann heute nicht",
+    "Shit...",
+    "Oh mein Gott",
   ],
   entschuldigung: [
     "ich hab völlig verpennt",
@@ -19,13 +23,11 @@ export default {
     "ich hab verpeilt",
   ],
   ausrede: [
-    "Desi's Hamster gestorben ist",
-    "Desi's Kaninchen gestorben ist",
-    "Desi's Meerschweinchen gestorben ist",
+    ...desisAnimals.map(animal => `Desi's ${animal} gestorben ist`),
     "ich morgen Fotoshooting mit der Family hab",
     "eine meiner 5.000 Nichten morgen getauft wird",
     "meine Oma zum fünften mal in diesem Jahr gestorben ist",
-    "Morgen Heilige drei Könige ist und wir das immer feiern",
+    "morgen Heilige drei Könige ist und wir das immer feiern",
     "mein Auto keinen Sprit mehr hat",
     "mein Auto nicht angesprungen ist",
     "mein Vater mir mein Auto nicht gegeben hat",
@@ -47,6 +49,12 @@ export default {
     "heut gar keine Postkutsche mehr fährt. Das ist jetzt blöd",
     "ich mir den Urlaub ja doch gar nicht leisten kann. Gut, dass mir das einen Tag vor Abreise noch eingefallen ist",
     "ich meinem vierjährigen Neffen versprochen habe heute in Texas Chainsaw Massace zu gehen",
+    "ich mit meiner Schwester zum All-You-can-eat-Buffet gehen wollte",
+    "meine Schwester Hilfe beim Einkaufen braucht. Sie kann das ganze Schwein nicht allein tragen",
+    "mein mega sicherer E-Sport ETF leider 2000% Miese gemacht hat",
+    "ich leider meine ganze Kohle bei der Währungsspekulation verloren habe. Dabei klangen afrikanische Dollar so sicher",
+    "ich meine Brille leider im Pool verloren habe",
+    "ich euch leider doch nicht zum Fußball schauen einladen kann. Ich war ja erst 30 mal bei euch",
   ],
   vertroestung: [
     "Aber das nächste mal bin ich auf jeden Fall am Start",
@@ -56,5 +64,7 @@ export default {
     "Sorry, aber dafür kann ich wirklich nichts",
     "Nächstes mal bin ich auf jeden Fall dabei",
     "Jetzt ist es leider zu spät",
+    "Es gibt ja noch andere Tage",
+    "Wir sind ja noch jung",
   ],
 };

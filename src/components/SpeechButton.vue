@@ -31,10 +31,6 @@ export default {
     onMounted(() => {
       // Get List of Voices
       const voices = window.speechSynthesis.getVoices();
-      console.log(
-        "FIRE ~ file: SpeechButton.vue ~ line 20 ~ onMounted ~ voices",
-        voices
-      );
 
       speech.voice = voices[31];
     });
