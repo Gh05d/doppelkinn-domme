@@ -8,20 +8,31 @@
     </figcaption>
   </figure>
 
-  <a
-    :href="whatsApp"
-    data-action="share/whatsapp/share"
-    title="Teile die Ausrede per WhatsApp"
-    class="whatsapp-link"
-  >
-    <img alt="WhatsApp Logo" src="../assets/WhatsApp.png" />
-  </a>
+  <div class="buttons">
+    <SpeechButton :text="bullshit" />
 
-  <button @click="newExcuse">Neue Ausrede erstellen</button>
+    <a
+      :href="whatsApp"
+      data-action="share/whatsapp/share"
+      title="Teile die Ausrede per WhatsApp"
+      class="whatsapp-link"
+    >
+      <img
+        width="50"
+        height="50"
+        alt="WhatsApp Logo"
+        src="../assets/whatsapp.png"
+      />
+    </a>
+  </div>
+
+  <button class="generate-button" @click="newExcuse">
+    Neue Ausrede generieren
+  </button>
 </template>
 
 <style scoped>
-button {
+.generate-button {
   border: 0;
   background: #ffc0cb;
   padding: 10px;
@@ -37,6 +48,12 @@ figcaption {
   margin: 10px;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
 .bullshit {
   color: rgb(68, 67, 68);
 }
@@ -45,6 +62,7 @@ figcaption {
 <script>
 import { ref, computed, onMounted } from "vue";
 import excuses from "../excuses";
+import SpeechButton from "./SpeechButton.vue";
 
 export default {
   setup() {
@@ -75,5 +93,6 @@ export default {
 
     return { bullshit, whatsApp, newExcuse, userLanguage };
   },
+  components: { SpeechButton },
 };
 </script>

@@ -6,6 +6,24 @@
       Created by <a href="https://github.com/Gh05d">Gh05d</a> - Copyright
       {{ new Date().getFullYear() }}
     </p>
+    <p>
+      Icons erstellt von
+      <a
+        target="external"
+        rel="noreferrer"
+        href="https://www.freepik.com"
+        title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a
+        target="external"
+        rel="noreferrer"
+        href="https://www.flaticon.com/de/"
+        title="Flaticon"
+        >www.flaticon.com</a
+      >
+    </p>
   </footer>
 </template>
 
@@ -23,7 +41,8 @@ html {
 }
 
 #app {
-  --padding-vertical: 20px;
+  --padding-top: 20px;
+  --padding-bottom: 10px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,12 +52,13 @@ html {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - var(--padding-vertical) * 2);
-  padding: var(--padding-vertical) 10px;
+  height: calc(100vh - var(--padding-top) - var(--padding-bottom));
+  padding: var(--padding-top) 10px var(--padding-bottom);
   background-color: #fafafa;
 }
 
 footer {
+  text-align: left;
   align-self: start;
 }
 
