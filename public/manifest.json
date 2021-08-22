@@ -2,6 +2,7 @@
   "short_name": "DDA",
   "name": "DoppelkinnDomme Ausredengenerator",
   "description": "Doppelkinn-Dommez gibt dir einen Grund deinen Freunden abzusagen",
+  "lang": "de-DE",
   "icons": [
     {
       "src": "/img/icons/domme-192x192.png",
