@@ -22,6 +22,7 @@ export default {
   ],
   ausrede: [
     "death",
+    "deathYearly",
     "ich am Wochenende mich mit den Kollegen aus der WoW-Gilde treffe. Wir zocken ja auch nur an Wochentagen die auf 'tag' enden.",
     "ich morgen Fotoshooting mit der Family hab",
     "eine meiner 5.000 Nichten morgen getauft wird",
@@ -30,9 +31,6 @@ export default {
     "mein Auto keinen Sprit mehr hat",
     "mein Auto nicht angesprungen ist",
     "mein Vater mir mein Auto nicht gegeben hat",
-    "morgen der Jahrestag von Desi's totem Hamster ist",
-    "morgen der Jahrestag von Desi's totem Kaninchen ist",
-    "morgen der Jahrestag von Desi's totem Meerschweinchen ist",
     "ich meine Tage habe",
     "ich mit den Jungs in Schottland Röcke anprobieren bin",
     "Desi's Hamster einen Zahn gezogen bekommen hat",

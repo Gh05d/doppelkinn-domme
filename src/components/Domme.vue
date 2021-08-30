@@ -94,6 +94,10 @@ export default {
         drei = `Desi's ${
           animals[getRandomNumber(animals.length)]
         } gestorben ist`;
+      } else if (drei == "deathYearly") {
+        drei = `morgen der Jahrestag von Desi's totem ${getRandomNumber(
+          animals.length
+        )} ist`;
       }
       let vier = vertroestung[getRandomNumber(vertroestung.length)];
 
