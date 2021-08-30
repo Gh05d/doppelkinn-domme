@@ -22,6 +22,7 @@ export default {
   ],
   ausrede: [
     "death",
+    "ich am Wochenende mich mit den Kollegen aus der WoW-Gilde treffe. Wir zocken ja auch nur an Wochentagen die auf 'tag' enden.",
     "ich morgen Fotoshooting mit der Family hab",
     "eine meiner 5.000 Nichten morgen getauft wird",
     "meine Oma zum fünften mal in diesem Jahr gestorben ist",
