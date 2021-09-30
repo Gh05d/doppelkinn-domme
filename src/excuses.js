@@ -23,6 +23,7 @@ export default {
   ausrede: [
     "death",
     "deathYearly",
+    "an Halloween hat mein Patenkind Geburtstag (da muss ich hin, sonst ist meine Schwester (die Mutter des Patenkinds) pissig ...) und ich gehe am dem Wochenende auch noch mit meinen Neffen ins Phantasialand. Das Wochenende passt also leider nicht bei mir...",
     "ich am Wochenende mich mit den Kollegen aus der WoW-Gilde treffe. Wir zocken ja auch nur an Wochentagen die auf 'tag' enden.",
     "ich morgen Fotoshooting mit der Family hab",
     "eine meiner 5.000 Nichten morgen getauft wird",
