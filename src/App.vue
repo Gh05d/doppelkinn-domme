@@ -64,6 +64,7 @@ html {
   justify-content: space-between;
   align-items: center;
   color: #2c3e50;
+  height: 100%;
 }
 
 #content {
