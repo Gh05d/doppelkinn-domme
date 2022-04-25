@@ -17,25 +17,19 @@
       title="Teile die Ausrede per WhatsApp"
       class="whatsapp-link"
     >
-      <img
-        width="50"
-        height="50"
-        alt="WhatsApp Logo"
-        src="../assets/whatsapp.png"
-      />
+      <img width="50" height="50" alt="WhatsApp Logo" src="../assets/whatsapp.png" />
     </a>
   </div>
 
-  <button class="generate-button" @click="newExcuse">
-    Neue Ausrede generieren
-  </button>
+  <button class="generate-button" @click="newExcuse">Neue Ausrede generieren</button>
 </template>
 
 <style scoped>
 .generate-button {
   border: 0;
   background: #ffc0cb;
-  padding: 10px;
+  padding: 0.8rem;
+  margin: 0 auto;
   box-shadow: 6px 5px 3px 0px rgba(0, 0, 0, 0.62);
 }
 
@@ -50,8 +44,8 @@ figcaption {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .bullshit {
@@ -75,13 +69,11 @@ export default {
     let whatsApp = computed(
       () =>
         `whatsapp://send?text=${encodeURIComponent(
-          `${bullshit.value} _created with the Doppelkinn Domme Ausredengenerator_`
+          `${bullshit.value} _created with the Doppelkinn-Domme Ausredengenerator_`
         )}`
     );
 
-    let userLanguage = computed(
-      () => navigator?.language || navigator?.userLanguage
-    );
+    let userLanguage = computed(() => navigator?.language || navigator?.userLanguage);
 
     const getRandomNumber = length => Math.floor(Math.random() * length);
 
@@ -91,9 +83,7 @@ export default {
       let drei = ausrede[getRandomNumber(ausrede.length)];
 
       if (drei == "death") {
-        drei = `Desi's ${
-          animals[getRandomNumber(animals.length)]
-        } gestorben ist`;
+        drei = `Desi's ${animals[getRandomNumber(animals.length)]} gestorben ist`;
       } else if (drei == "deathYearly") {
         drei = `morgen der Jahrestag von Desi's totem ${animals(
           getRandomNumber(animals.length)

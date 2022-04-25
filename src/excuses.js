@@ -9,6 +9,7 @@ export default {
     "Sorry Jungs, kann heute nicht",
     "Shit...",
     "Oh mein Gott",
+    "Hey Leute"
   ],
   entschuldigung: [
     "ich hab völlig verpennt",
@@ -53,6 +54,9 @@ export default {
     "ich leider meine ganze Kohle bei der Währungsspekulation verloren habe. Dabei klangen afrikanische Dollar so sicher",
     "ich meine Brille leider im Pool verloren habe",
     "ich euch leider doch nicht zum Fußball schauen einladen kann. Ich war ja erst 30 mal bei euch",
+    "ich mir Ostersamstag notiert hatte. Sonntags ist eine Feier bei meinen Eltern und Montags bei Desis Mutter. Daher könnte ich nur Samstags. Ich glaube, dass wir da aneinander vorbeigeredet haben. Aber ich hab gerade nachgelesen oben. Du hattest wirklich Montag geschrieben",
+    "wir immer an Ostern Sonntags und Montags zu unseren Familien Essen gehen, das ist Tradition. Das hatte ich dann falsch gelesen. Der Samstag würde bei euch nicht gehen?",
+    "ich an diesem Wochenende leider raus bin mit Düsseldorf. Ich muss am Samstag einer Freundin beim Umzug helfen. Das hatte ich nicht mehr auf dem Schirm. Wir sehen uns ja aber im Juni in Düsseldorf. Und ja Passe, ich weiß, dass das für dich ein gefundenes Fressen für den Ausredengenerator ist, aber was soll ich machen? Es ist halt so 😅🙈"
   ],
   vertroestung: [
     "Aber das nächste mal bin ich auf jeden Fall am Start",

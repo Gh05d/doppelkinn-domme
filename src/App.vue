@@ -1,7 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Domme />
-  <UpdateButton />
+  <div class="image-container">
+    <img
+      id="logo"
+      width="200"
+      height="200"
+      alt="Domme am feiern"
+      src="./assets/logo.jpg"
+    />
+  </div>
+  <div id="content">
+    <Domme />
+    <UpdateButton />
+  </div>
+
   <footer>
     <p>
       Created by <a href="https://github.com/Gh05d">Gh05d</a> - Copyright
@@ -9,11 +20,7 @@
     </p>
     <p>
       Icons erstellt von
-      <a
-        target="external"
-        rel="noreferrer"
-        href="https://www.freepik.com"
-        title="Freepik"
+      <a target="external" rel="noreferrer" href="https://www.freepik.com" title="Freepik"
         >Freepik</a
       >
       from
@@ -38,6 +45,7 @@ export default { name: "App", components: { Domme, UpdateButton } };
 <style>
 body,
 html {
+  height: 100%;
   margin: 0;
   box-sizing: border-box;
 }
@@ -49,17 +57,39 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - var(--padding-top) - var(--padding-bottom));
-  padding: var(--padding-top) 10px var(--padding-bottom);
+  color: #2c3e50;
   background-color: #fafafa;
+  height: 100%;
+}
+
+#content {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  padding: var(--padding-top) 10px var(--padding-bottom);
+}
+
+.image-container {
+  width: 100%;
+  background-color: black;
+}
+
+#logo {
+  height: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  margin: 0;
 }
 
 footer {
+  padding: 1rem;
+  margin-top: 1rem;
   text-align: left;
   align-self: start;
 }
