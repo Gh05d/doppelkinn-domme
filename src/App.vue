@@ -8,6 +8,7 @@
       src="./assets/logo.jpg"
     />
   </div>
+
   <div id="content">
     <Domme />
     <UpdateButton />
@@ -48,6 +49,7 @@ html {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fafafa;
 }
 
 #app {
@@ -62,8 +64,6 @@ html {
   justify-content: space-between;
   align-items: center;
   color: #2c3e50;
-  background-color: #fafafa;
-  height: 100%;
 }
 
 #content {
